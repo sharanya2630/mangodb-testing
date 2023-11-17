@@ -13,7 +13,7 @@ const PORT=process.env.PORT || 3000
 dotEnv.config() 
 
 app.use(bodyParser.json())
-
+const dbConnection=
 mongoose.connect(process.env.MONGO_URL) 
 .then(()=>{
     console.log("mongodb connected")
